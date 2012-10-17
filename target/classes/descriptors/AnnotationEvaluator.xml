@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <implementationName>test.AnnotationEvaluator</implementationName>
+  <processingResourceMetaData>
+    <name>Annotation Evaluator</name>
+    <description>Print Precision, Recall and f-measure.</description>
+    <version>1.0</version>
+    <vendor>The Apache Software Foundation</vendor>
+    <configurationParameters>
+      <configurationParameter>
+        <name>outputFile</name>
+        <description>File to which annotations will be written</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>SampleFile</name>
+        <description>File used in evaluation</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>outputFile</name>
+        <value>
+          <string>src/main/resources/dataOutput/outputEvaluation.txt</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>SampleFile</name>
+        <value>
+          <string>src/main/resources/dataSample/sample.out</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <types>
+        <typeDescription>
+          <name>model.Gene</name>
+          <description/>
+          <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+      </types>
+    </typeSystemDescription>
+    <capabilities>
+      <capability>
+        <inputs>
+          <type allAnnotatorFeatures="true">model.Gene</type>
+        </inputs>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>false</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </processingResourceMetaData>
+</casConsumerDescription>
