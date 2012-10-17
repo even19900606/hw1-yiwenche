@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>test.GeneNameFilter</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>Gene Name Filter</name>
+    <description>An annotator that descards some wrong gene names from the index</description>
+    <version>1.0</version>
+    <vendor>The Apache Software Foundation</vendor>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <typeSystemDescription>
+      <imports>
+        <import location="GeneNameNERTypeSystem.xml"/>
+      </imports>
+    </typeSystemDescription>
+    <capabilities>
+      <capability>
+        <inputs>
+          <type allAnnotatorFeatures="true">model.GeneName</type>
+        </inputs>
+        <outputs>
+          <type>model.GeneName</type>
+          <feature>model.GeneName:ID</feature>
+          <feature>model.GeneName:Name</feature>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

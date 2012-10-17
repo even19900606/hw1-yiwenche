@@ -1,0 +1,8 @@
+Evaluation Result
+Total Number of Gene Name Annotations in Standard File: 18265
+Total Number of Gene Name Annotations CPE find: 20107
+Total Number of Gene Name Annotations which are found to be correct: 15504
+
+Precision: 0.7710747500870344
+Recall: 0.848836572679989
+F-measure: 0.8080892317314708
