@@ -3,7 +3,7 @@
     <collectionReader>
         <collectionIterator>
             <descriptor>
-                <import location="FileSystemCollectionReader.xml"/>
+                <import location="descriptors/FileSystemCollectionReader.xml"/>
             </descriptor>
             <configurationParameterSettings>
                 <nameValuePair>
@@ -18,7 +18,7 @@
     <casProcessors casPoolSize="3" processingUnitThreadCount="1">
         <casProcessor deployment="integrated" name="Gene Name Annotator">
             <descriptor>
-                <import location="GeneNameAnnotator.xml"/>
+                <import location="descriptors/GeneNameAnnotator.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>
@@ -30,7 +30,7 @@
         </casProcessor>
         <casProcessor deployment="integrated" name="Gene Name Filter">
             <descriptor>
-                <import location="GeneNameFilter.xml"/>
+                <import location="descriptors/GeneNameFilter.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>
@@ -42,7 +42,7 @@
         </casProcessor>
         <casProcessor deployment="integrated" name="Annotation Writer">
             <descriptor>
-                <import location="AnnotationWriter.xml"/>
+                <import location="descriptors/AnnotationWriter.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>
@@ -54,7 +54,7 @@
         </casProcessor>
         <casProcessor deployment="integrated" name="Annotation Evaluator">
             <descriptor>
-                <import location="AnnotationEvaluator.xml"/>
+                <import location="descriptors/AnnotationEvaluator.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>
