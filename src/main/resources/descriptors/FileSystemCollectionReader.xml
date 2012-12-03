@@ -50,7 +50,7 @@
       <nameValuePair>
         <name>InputDirectory</name>
         <value>
-          <string>src/main/resources/dataInput</string>
+          <string>hw1.in</string>
         </value>
       </nameValuePair>
       <nameValuePair>
@@ -66,8 +66,10 @@
         </value>
       </nameValuePair>
     </configurationParameterSettings>
+    <typeSystemDescription/>
     <typePriorities/>
     <fsIndexCollection/>
+    <capabilities/>
     <operationalProperties>
       <modifiesCas>true</modifiesCas>
       <multipleDeploymentAllowed>false</multipleDeploymentAllowed>

@@ -20,7 +20,7 @@
       <nameValuePair>
         <name>outputFile</name>
         <value>
-          <string>src/main/resources/dataOutput/testOuput.txt</string>
+          <string>hw1-yiwenche.out</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
