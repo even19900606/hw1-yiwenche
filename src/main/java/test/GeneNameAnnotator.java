@@ -78,7 +78,8 @@ public class GeneNameAnnotator extends JCasAnnotator_ImplBase {
     Name = null;
     begin = end = delimiterIndex = -1;
     //Call the methods from Lingpipe NER to detects the gene names in the documents.
-    String lingpipeNER = "src/main/java/ne-en-bio-genetag.HmmChunker";
+    //String lingpipeNER = "src/main/java/ne-en-bio-genetag.HmmChunker";
+    String lingpipeNER = "ne-en-bio-genetag.HmmChunker";
     File modelFile = new File(lingpipeNER);
     Chunker chunker;
     Chunking chunking;

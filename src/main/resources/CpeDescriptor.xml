@@ -52,7 +52,7 @@
             </errorHandling>
             <checkpoint batch="10000" time="1000ms"/>
         </casProcessor>
-        <casProcessor deployment="integrated" name="Annotation Evaluator">
+        <!-- <casProcessor deployment="integrated" name="Annotation Evaluator">
             <descriptor>
                 <import location="descriptors/AnnotationEvaluator.xml"/>
             </descriptor>
@@ -63,7 +63,7 @@
                 <timeout max="100000" default="-1"/>
             </errorHandling>
             <checkpoint batch="10000" time="1000ms"/>
-        </casProcessor>
+        </casProcessor> -->
     </casProcessors>
     <cpeConfig>
         <numToProcess>-1</numToProcess>
