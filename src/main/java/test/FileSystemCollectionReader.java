@@ -121,7 +121,7 @@ public class FileSystemCollectionReader extends CollectionReader_ImplBase {
     File[] files = dir.listFiles();
     for (int i = 0; i < files.length; i++) {
       if (!files[i].isDirectory()) {
-        mFiles.add(files[i]);
+        if(files[i].getName().equals("hw1.in"))mFiles.add(files[i]);
       } else if (mRecursive) {
         addFilesFromDir(files[i]);
       }

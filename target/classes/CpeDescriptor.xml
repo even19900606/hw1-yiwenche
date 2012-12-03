@@ -5,14 +5,14 @@
             <descriptor>
                 <import location="descriptors/FileSystemCollectionReader.xml"/>
             </descriptor>
-            <configurationParameterSettings>
+            <!-- <configurationParameterSettings>
                 <nameValuePair>
                     <name>InputDirectory</name>
                     <value>
                         <string>hw1.in</string>
                     </value>
                 </nameValuePair>
-            </configurationParameterSettings>
+            </configurationParameterSettings> -->
         </collectionIterator>
     </collectionReader>
     <casProcessors casPoolSize="3" processingUnitThreadCount="1">
